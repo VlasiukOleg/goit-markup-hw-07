@@ -116,13 +116,14 @@ img {
 
 /* Header */
 
-.page-header.portfolio {
+.page-header--border {
   border-bottom: var(--main-border);
 }
 
-.page-header .container {
+.page-header__container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .page-header__logo {
@@ -131,6 +132,8 @@ img {
 
 .nav__list {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav__item:not(:last-child) {
@@ -139,6 +142,8 @@ img {
 
 .contacts-header {
   display: flex;
+  align-items: center;
+  justify-content: center;
 
   margin-left: auto;
 }
@@ -178,6 +183,8 @@ img {
 .contacts-header__link {
   display: flex;
   align-items: center;
+  justify-content: center;
+
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -217,6 +224,8 @@ img {
 .contacts-header__link:focus {
   color: var(--accent-color);
 }
+
+/* Sass */
 
 /* Section Hero */
 
@@ -298,6 +307,8 @@ img {
 
 .product-list {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .product-list__item {
@@ -340,6 +351,9 @@ img {
 
 .team-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
+
   text-align: center;
 }
 

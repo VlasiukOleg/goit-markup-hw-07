@@ -1,0 +1,37 @@
+.features-list {
+  display: flex;
+  justify-content: space-between;
+
+  @extend %list;
+}
+
+.features-list__title {
+  color: getColor('secondary');
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+.features-list__item:not(:last-child) {
+  margin-right: $main-gap;
+}
+
+.features-list__thumb {
+  @include centerdFlex();
+
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: getBg-color('secondary');
+  border-radius: 4px;
+}
+
+.features-list__icon {
+  width: 70px;
+  height: 70px;
+}

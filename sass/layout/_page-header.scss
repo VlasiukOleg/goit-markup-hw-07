@@ -1,0 +1,11 @@
+.page-header--border {
+  border-bottom: $main-gap;
+}
+
+.page-header__container {
+  @include centerdFlex();
+}
+
+.page-header__logo {
+  margin-right: 93px;
+}

@@ -1,0 +1,23 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__title {
+    margin-bottom: 50px;
+
+    color: getColor('secondary');
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
+
+  &--nopadding {
+    padding-top: 0px;
+  }
+
+  &--team-background {
+    background-color: getBg-color('secondary');
+  }
+}

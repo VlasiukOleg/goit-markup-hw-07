@@ -1,0 +1,50 @@
+.contacts-header {
+  @extend %list;
+  @include centerdFlex();
+
+  margin-left: auto;
+
+  &__item:not(:last-child) {
+    margin-right: $main-gap;
+  }
+}
+
+.contacts-header__link {
+  @include centerdFlex();
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: getColor('primary');
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color $general-duration $general-cubic;
+
+  @extend %link;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.contact-header__mail-icon {
+  margin-right: 10px;
+
+  width: 16px;
+  height: 12px;
+
+  fill: currentColor;
+}
+
+.contact-header__phone-icon {
+  margin-right: 10px;
+
+  width: 10px;
+  height: 16px;
+
+  fill: currentColor;
+}
