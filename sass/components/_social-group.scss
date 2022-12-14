@@ -1,0 +1,23 @@
+.social-group {
+  @include centerdFlex();
+  @extend %list;
+}
+
+.social-group__item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-group__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-group__link {
+  @extend %social-link;
+}
+
+.social-group__icon {
+  @include centerdFlex();
+
+  fill: currentColor;
+}

@@ -1,0 +1,26 @@
+.address-list {
+  @extend %list;
+
+  font-style: normal;
+}
+
+.address__link {
+  @extend %link;
+
+  display: inline-block;
+
+  color: getColor('address');
+
+  &--color {
+    color: getColor('general-white');
+  }
+
+  &:hover {
+    color: var(--accent-color);
+    transition: color var(--primary-duration) var(--primary-cubik);
+  }
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}

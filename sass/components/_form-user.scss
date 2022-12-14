@@ -1,0 +1,151 @@
+.user-form {
+  padding: 40px;
+}
+
+.user-form__button {
+  display: block;
+  padding: 10px 52px;
+  margin: 0 auto;
+
+  box-shadow: getBox-shadow('simple');
+
+  @include transition('background-color');
+
+  &:hover,
+  &:focus {
+    background-color: getColor('accent-hover');
+  }
+}
+
+.user-form__heading {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  margin-bottom: 12px;
+
+  color: getColor('secondary');
+}
+
+.user-form__field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.user-form__wrap {
+  position: relative;
+}
+
+.user-form__label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  margin-bottom: 4px;
+}
+
+.user-form__input {
+  width: 100%;
+
+  padding: 11px;
+
+  padding-left: 42px;
+
+  border: getBorder('secondary');
+  border-radius: 4px;
+
+  outline: none;
+
+  @include transition('border-color');
+}
+
+.user-form__icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+
+  transform: translateY(-50%);
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+
+  @include transition('fill');
+}
+
+.user-form__field--margin {
+  margin-bottom: 20px;
+}
+
+.user-form__textarea {
+  padding: 12px 16px;
+
+  width: 448px;
+  height: 120px;
+
+  border: getBorder('secondary');
+  border-radius: 4px;
+
+  outline: none;
+  resize: none;
+
+  @include transition('border-color');
+}
+
+.user-form__textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: getBg-color('placeholder');
+}
+
+.policy-checkbox {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 30px;
+}
+
+.policy-checkbox__label .policy-checkbox__link {
+  color: getColor('accent');
+}
+
+.policy-checkbox__icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+
+  border: getBorder('checkbox');
+  border-radius: 2px;
+
+  margin-right: 8px;
+
+  transition: background-color $general-duration $general-cubic,
+    border-color $general-duration $general-cubic;
+}
+
+.policy-checkbox__input:checked ~ .policy-checkbox__icon {
+  background-color: getColor('accent');
+
+  border-color: transparent;
+
+  background-origin: border-box;
+}
+
+.policy-checkbox__input:focus ~ .policy-checkbox__icon {
+  border-color: getColor('accent');
+}
+
+.user-form__field:focus-within .user-form__icon {
+  fill: getColor('accent');
+}
+
+.user-form__field:focus-within .user-form__input,
+.user-form__field:focus-within .user-form__textarea {
+  border-color: getColor('accent');
+}

@@ -5,7 +5,7 @@ $colors: (
   'accent-hover': #188ce8,
   'logo': #000000,
   'general-white': #ffffff,
-  'footer-text': rgba(255, 255, 255, 0.6),
+  'address': rgba(255, 255, 255, 0.6),
   'primary-icon': #afb1b8,
   'placeholder': rgba(117, 117, 117, 0.5),
 );
@@ -23,6 +23,10 @@ $bg-colors: (
 $borders: (
   'primary': 1px solid #ececec,
   'secondary': 1px solid rgba(33, 33, 33, 0.2),
+  'icon': 1px solid #afb1b8,
+  'accent': 1px solid #2196f3,
+  'input': 1px solid rgba(255, 255, 255, 0.3),
+  'checkbox': 2px solid #212121,
 );
 
 $box-shadows: (
@@ -37,3 +41,5 @@ $main-gap: 30px;
 
 $general-cubic: cubic-bezier(0.4, 0, 0.2, 1);
 $general-duration: 250ms;
+
+$primary-border-radius: 4px;
