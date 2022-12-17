@@ -1,20 +1,20 @@
-.product-list {
+.card-list {
   @include centerdFlex();
   @extend %list;
 }
 
-.product-list__item {
+.card-list__item {
   position: relative;
 
   flex-basis: calc(100% - 60px / 3);
   margin-right: $main-gap;
 }
 
-.product-list__item:nth-child(3n) {
+.card-list__item:nth-child(3n) {
   margin-right: 0px;
 }
 
-.product-list__descr {
+.card-list__descr {
   width: 100%;
   position: absolute;
   left: 0;
@@ -26,7 +26,7 @@
   background-color: getBg-color('overlay-primary');
 }
 
-.product-list__heading {
+.card-list__heading {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;

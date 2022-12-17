@@ -1,32 +1,7 @@
-@import './utils/variables';
-@import './utils/functions';
-@import './utils/placeholder';
-@import './utils/mixins';
+@import './utils/__utils';
 
-@import './base/reset';
-@import './base/visually-hidden';
-@import './base/common';
+@import './base/__base';
 
-@import './components/container';
-@import './components/section';
+@import './components/__components';
 
-@import './layout/page-header';
-@import './layout/page-hero';
-@import './layout/page-features';
-@import './layout/page-product';
-@import './layout/page-clients';
-@import './layout/page-team';
-@import './layout/page-footer';
-
-@import './components/navigation';
-@import './components/logo';
-@import './components/contacts';
-@import './components/address';
-@import './components/social-group';
-@import './components/address';
-@import './components/button-group';
-@import './components/grid';
-@import './components/product';
-@import './components/button';
-@import './components/backdrop-modal';
-@import './components/form-user';
+@import './layout/__layout';

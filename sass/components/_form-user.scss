@@ -7,9 +7,9 @@
   padding: 10px 52px;
   margin: 0 auto;
 
-  box-shadow: getBox-shadow('simple');
+  box-shadow: $box-shadow-simple;
 
-  @include transition('background-color');
+  transition: gettransition(background-color);
 
   &:hover,
   &:focus {
@@ -18,9 +18,8 @@
 }
 
 .user-form__heading {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include font(20, 700);
+
   text-align: center;
 
   margin-bottom: 12px;
@@ -39,9 +38,7 @@
 }
 
 .user-form__label {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include font(12, null, 14, 0.01);
 
   margin-bottom: 4px;
 }
@@ -58,7 +55,7 @@
 
   outline: none;
 
-  @include transition('border-color');
+  transition: gettransition(border-color);
 }
 
 .user-form__icon {
@@ -72,7 +69,7 @@
   width: 18px;
   height: 18px;
 
-  @include transition('fill');
+  transition: gettransition(fill);
 }
 
 .user-form__field--margin {
@@ -86,29 +83,24 @@
   height: 120px;
 
   border: getBorder('secondary');
-  border-radius: 4px;
+  border-radius: $primary-border-radius;
 
   outline: none;
   resize: none;
 
-  @include transition('border-color');
+  transition: gettransition(border-color);
 }
 
 .user-form__textarea::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include font(12, null, 14, 0.01);
 
   color: getBg-color('placeholder');
 }
 
 .policy-checkbox {
-  display: flex;
-  align-items: center;
+  @include centerdFlex();
 
-  justify-content: center;
-
-  margin-bottom: 30px;
+  margin-bottom: $main-gap;
 }
 
 .policy-checkbox__label .policy-checkbox__link {
@@ -125,8 +117,7 @@
 
   margin-right: 8px;
 
-  transition: background-color $general-duration $general-cubic,
-    border-color $general-duration $general-cubic;
+  transition: gettransition(background-color), gettransition(border-color);
 }
 
 .policy-checkbox__input:checked ~ .policy-checkbox__icon {

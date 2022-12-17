@@ -10,9 +10,7 @@
 
   padding: 6px 22px;
 
-  font-weight: 500;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
+  @include font($fw: 500);
 
   background-color: getBg-color('secondary');
 }

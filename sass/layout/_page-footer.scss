@@ -11,6 +11,8 @@
 }
 
 .page-footer__logo {
+  @extend %link;
+
   display: inline-block;
 
   color: getColor('general-white');
@@ -18,16 +20,14 @@
   margin-bottom: 10px;
 }
 
-.social-group__heading--footer {
+.social-wrap__heading {
   margin-bottom: 20px;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(14, 700, 16, 0.03);
+
   text-transform: uppercase;
 
-  color: var(--bg-white-color);
+  color: getColor('general-white');
 }
 
 .social-group__link--footer {

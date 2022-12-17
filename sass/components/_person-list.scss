@@ -1,0 +1,42 @@
+.person-list {
+  @include centerdFlex();
+  @extend %list;
+
+  text-align: center;
+}
+
+.person__item {
+  flex-basis: calc(100% - 90px / 4);
+
+  margin-right: $main-gap;
+
+  background-color: getBg-color('general-white');
+  box-shadow: $box-shadow-primary;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.person__item:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.person-meta {
+  padding-top: $main-gap;
+  padding-bottom: $main-gap;
+}
+
+.person-meta__user {
+  color: getColor('secondary');
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  margin-bottom: 10px;
+}
+
+.person-meta__position {
+  font-size: 16px;
+  line-height: 1.19;
+
+  margin-bottom: 16px;
+}

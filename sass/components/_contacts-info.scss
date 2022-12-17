@@ -1,4 +1,4 @@
-.contacts-header {
+.contacts-info {
   @extend %list;
   @include centerdFlex();
 
@@ -9,7 +9,7 @@
   }
 }
 
-.contacts-header__link {
+.contacts-info__link {
   @include centerdFlex();
 
   padding-top: 32px;
@@ -21,17 +21,17 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  transition: color $general-duration $general-cubic;
+  transition: gettransition(color);
 
   @extend %link;
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: getColor('accent');
   }
 }
 
-.contact-header__mail-icon {
+.contact-info__mail-icon {
   margin-right: 10px;
 
   width: 16px;
@@ -40,7 +40,7 @@
   fill: currentColor;
 }
 
-.contact-header__phone-icon {
+.contact-info__phone-icon {
   margin-right: 10px;
 
   width: 10px;

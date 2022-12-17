@@ -1,5 +1,5 @@
 .page-header--border {
-  border-bottom: $main-gap;
+  border-bottom: getBorder('primary');
 }
 
 .page-header__container {
@@ -7,5 +7,7 @@
 }
 
 .page-header__logo {
+  @extend %link;
+
   margin-right: 93px;
 }

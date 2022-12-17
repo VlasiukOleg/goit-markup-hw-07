@@ -19,10 +19,8 @@
 
   color: getColor('general-white');
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+  @include font(44, 900, 60, 0.06);
+
   text-transform: uppercase;
 
   margin-bottom: $main-gap;

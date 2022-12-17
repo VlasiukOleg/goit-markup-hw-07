@@ -1,4 +1,4 @@
-.address-list {
+.address__list {
   @extend %list;
 
   font-style: normal;
@@ -16,8 +16,8 @@
   }
 
   &:hover {
-    color: var(--accent-color);
-    transition: color var(--primary-duration) var(--primary-cubik);
+    color: getColor('accent');
+    transition: gettransition(color);
   }
 }
 

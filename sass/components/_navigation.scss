@@ -14,13 +14,12 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(14, 500, 16, 0.02);
 
   color: getColor('secondary');
 
-  transition: color $general-duration $general-cubic;
+
+  transition: gettransition(color);
 
   @extend %link;
 

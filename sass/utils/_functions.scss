@@ -13,3 +13,7 @@
 @function getBox-shadow($key) {
   @return map-get($box-shadows, $key);
 }
+
+@function gettransition($key) {
+  @return map-get($transitions, $key);
+}
