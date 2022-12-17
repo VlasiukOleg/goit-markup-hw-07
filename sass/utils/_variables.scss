@@ -53,7 +53,3 @@ $transitions: (
   'visibility': visibility $general-duration $general-cubic,
   'fill': fill $general-duration $general-cubic,
 );
-
-@function gettransition($key) {
-  @return map-get($transitions, $key);
-}
